@@ -19,14 +19,16 @@ select * from address_book1;
 drop table address_book1;
 UPDATE address_book1 SET city='Banglore' WHERE First_Name='Shruti';
 select * from address_book1;
-DELETE FROM address_book1 WHERE First_Name='Preeti';
+DELETE FROM address_book1 WHERE First_Name='Ravi';
 select * from address_book1;
 SELECT First_Name, Last_Name FROM address_book1 WHERE City='chennai' OR State='Tamilnadu';
 SELECT COUNT(City) FROM address_book1 GROUP BY City;
 SELECT First_Name, Last_Name, City FROM address_book1 ORDER BY First_Name;
 SELECT COUNT(State) FROM address_book1 GROUP BY State;
-
-ALTER TABLE address_book ADD Type varchar(30);
-UPDATE address_book SET Type='Family' WHERE First_Name='Ravi';
-SELECT * FROM address_book1;
+select * from address_book1;
+Alter table address_book1
+Add Name varchar(20), Add Type varchar(20);
+Update address_book1 set Type = 'FriendsBook' , Name = 'Friend' where First_Name ='Preeti';
+Update address_book1 set Type = 'FamilyBook', Name = 'Family' where First_Name ='Shruti';
+select * from address_book1;
 
