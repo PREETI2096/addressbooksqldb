@@ -1,0 +1,4 @@
+id,First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Email,Name,Type
+1,Preeti,Ghatage,navalur,Dharwad,Karnataka,580009,8553266354,pree12@gmail.com,Friend,FriendsBook
+2,Shruti,Deshmukh,sandur,Banglore,Andrapradesh,450092,7887456129,shru@gmail.com,Family,FamilyBook
+4,Shravana,Narasannavar,iit,pondicherry,Tamilnadu,640159,8567892139,shravz@gmail.com,NULL,NULL
