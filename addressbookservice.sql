@@ -31,4 +31,6 @@ Add Name varchar(20), Add Type varchar(20);
 Update address_book1 set Type = 'FriendsBook' , Name = 'Friend' where First_Name ='Preeti';
 Update address_book1 set Type = 'FamilyBook', Name = 'Family' where First_Name ='Shruti';
 select * from address_book1;
+select COUNT(name) from address_book1;
+select * from address_book1;
 
