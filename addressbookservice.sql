@@ -27,10 +27,12 @@ SELECT First_Name, Last_Name, City FROM address_book1 ORDER BY First_Name;
 SELECT COUNT(State) FROM address_book1 GROUP BY State;
 select * from address_book1;
 Alter table address_book1
-Add Name varchar(20), Add Type varchar(20);
-Update address_book1 set Type = 'FriendsBook' , Name = 'Friend' where First_Name ='Preeti';
-Update address_book1 set Type = 'FamilyBook', Name = 'Family' where First_Name ='Shruti';
+ Add Type varchar(20);
+Update address_book1 set Type = 'Friend'   where First_Name ='Preeti';
+Update address_book1 set Type = 'Family' where First_Name ='Shruti';
 select * from address_book1;
 select COUNT(name) from address_book1;
-select * from address_book1;
-
+CREATE TABLE type AS (SELECT First_Name, Type FROM address_book1);
+	INSERT INTO type VALUES ('Preeti', 'Family');
+	INSERT INTO type VALUES ('Preeti', 'Friend');
+    select* from address_book1;
